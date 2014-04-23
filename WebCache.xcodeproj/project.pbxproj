@@ -22,6 +22,8 @@
 		CC95C9E91907710B00597B1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC95C9C81907710B00597B1A /* UIKit.framework */; };
 		CC95C9F11907710B00597B1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC95C9EF1907710B00597B1A /* InfoPlist.strings */; };
 		CC95C9F31907710B00597B1A /* WebCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC95C9F21907710B00597B1A /* WebCacheTests.m */; };
+		CC95C9FE190781F000597B1A /* PooUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC95C9FD190781F000597B1A /* PooUtil.m */; };
+		CC95CA011907828800597B1A /* PooURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CC95CA001907828800597B1A /* PooURLCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		CC95C9EE1907710B00597B1A /* WebCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebCacheTests-Info.plist"; sourceTree = "<group>"; };
 		CC95C9F01907710B00597B1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC95C9F21907710B00597B1A /* WebCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebCacheTests.m; sourceTree = "<group>"; };
+		CC95C9FC190781F000597B1A /* PooUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PooUtil.h; sourceTree = "<group>"; };
+		CC95C9FD190781F000597B1A /* PooUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PooUtil.m; sourceTree = "<group>"; };
+		CC95C9FF1907828800597B1A /* PooURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PooURLCache.h; sourceTree = "<group>"; };
+		CC95CA001907828800597B1A /* PooURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PooURLCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				CC95C9DD1907710B00597B1A /* PooViewController.m */,
 				CC95C9DF1907710B00597B1A /* Images.xcassets */,
 				CC95C9CB1907710B00597B1A /* Supporting Files */,
+				CC95C9FC190781F000597B1A /* PooUtil.h */,
+				CC95C9FD190781F000597B1A /* PooUtil.m */,
+				CC95C9FF1907828800597B1A /* PooURLCache.h */,
+				CC95CA001907828800597B1A /* PooURLCache.m */,
 			);
 			path = WebCache;
 			sourceTree = "<group>";
@@ -254,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC95C9FE190781F000597B1A /* PooUtil.m in Sources */,
 				CC95C9D11907710B00597B1A /* main.m in Sources */,
 				CC95C9D51907710B00597B1A /* PooAppDelegate.m in Sources */,
 				CC95C9DE1907710B00597B1A /* PooViewController.m in Sources */,
+				CC95CA011907828800597B1A /* PooURLCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebCache/WebCache-Prefix.pch";
 				INFOPLIST_FILE = "WebCache/WebCache-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +420,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebCache/WebCache-Prefix.pch";
 				INFOPLIST_FILE = "WebCache/WebCache-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
